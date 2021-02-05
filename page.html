@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="#" onclick="thisF">See on meie tekst!</a>;
+</body>
+<script>let thisF = function(){
+    var style = document.createElement('style');
+    style.innerHTML = `
+  body{
+  pointer-events: none;
+  }
+  `;
+    document.head.appendChild(style);
+
+};</script>
+</html>
